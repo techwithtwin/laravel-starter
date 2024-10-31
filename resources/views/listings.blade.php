@@ -13,7 +13,9 @@
         {{ $heading }}
     </h1>
 
-    @unless (empty($listings))
+
+
+    @unless (count($listings) == 0)
 
         @foreach ($listings as $listing)
             <h2>
